@@ -1,0 +1,23 @@
+{
+  "name": "Brainly-Scraper-V1",
+  "version": "1.0.0",
+  "description": "Nothing Like 127.0.0.1",
+  "main": "geps.js",
+  "scripts": {
+    "start": "node geps.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrG3P5"
+  },
+  "keywords": [
+    "Nothing"
+  ],
+  "author": "X - MrG3P5",
+  "license": "ISC",
+  "dependencies": {
+    "brainly-scraper": "^1.0.3",
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0"
+  }
+}
