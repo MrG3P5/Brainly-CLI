@@ -1,1 +1,1 @@
-# Brainly-Scraper
+<center> # Brainly-Scraper </center>
