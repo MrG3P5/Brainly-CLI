@@ -1,8 +1,3 @@
-## Getting Started
-
-### This project require NodeJS v14.
-This is a Bot Group Type, so you have to enter the bot into a group in order to fully use the command!
-
 ### Install On TERMUX
 ```bash
 > apt update && apt upgrade -y
@@ -16,4 +11,13 @@ This is a Bot Group Type, so you have to enter the bot into a group in order to 
 
 ### Install On Windows
 
-- Download NodeJS last in <a href="https://nodejs.org/en/download/current"><font>Here</a>
+- Download NodeJS latest in <a href="https://nodejs.org/en/download/current"><font>Here</a>
+- Download Git bash latest at <a href="https://git-scm.com/downloads"><font>Here</a>
+- If done open terminal
+
+```bash
+> git clone https://github.com/MrG3P5/Brainly-Scraper.git
+> cd Brainly-Scraper
+> npm install
+> npm start
+```
