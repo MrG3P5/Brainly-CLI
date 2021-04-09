@@ -39,22 +39,22 @@ console.log(color("                                       'd,  .'", 'red'))
 console.log(color("                                         ;l   ..", 'red'))
 console.log(color("                                          .o", 'red'))
 console.log(color("    [=] Made by : X - MrG3P5 [=]            ", 'cyan'), color("c", "red"))
-console.log(color("    [=] Version : 1.0        [=]             ", 'cyan'), color(".'", "red"))
+console.log(color("    [=] Version : 2.0        [=]             ", 'cyan'), color(".'", "red"))
 console.log(color("                                              ", 'cyan'), color(".'", "red"))
 console.log('')
 console.log('')
 
 // USER INPUT QUESTION
 var recursiveAsyncReadLine = function () {
-    rl.question('Pertanyaan: ', function (userInput) {
-        if (userInput == 'exit' || userInput == 'Exit' || userInput == 'EXIT') {
-            console.log(`See you...`)
+    rl.question('\033[1;36mSOAL: \033[1;32m', function (userInput) {
+        if (userInput == 'exit' || userInput == 'Exit' || userInput == 'EXIT' || userInput == '') {
+            console.log('See you...^.^')
             process.exit();
         }                          // 5 = Jumlah result
     BrainlySearch(userInput, Number(5), function (res) {
             res.forEach(x => {
-                console.log(color(`${x.pertanyaan.replace("Pertanyaan:", "")}\n`, 'green'), color(`Jawaban:`, 'white'), color(`${x.jawaban.judulJawaban.replace("Jawaban:", "")}\n\n`, 'green'))
-                recursiveAsyncReadLine();// CALLBACK INPUT
+                console.log('\033[1;36m\033[1;32m'+x.pertanyaan.replace("Pertanyaan:", "")+'\n\033[1;36mJawaban: \033[1;32m'+x.jawaban.judulJawaban+'\n\n')
+                recursiveAsyncReadLine();
             })
         })
     })
